@@ -34,7 +34,7 @@ function selected(el) {
 }
 
 function newSource() {
-    document.getElementById('center-part').innerHTML = '<a>Создание нового источника:</a><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город" style="margin-left: 108px; width: 140px; float: right"><br>';
+    document.getElementById('center-part').innerHTML = '<div style="display: flex"></div><a>Создание нового источника:</a><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город" style="margin-left: 108px; width: 140px; float: right"><br></div>';
     newCity();
 }
 function newNameSource() {
