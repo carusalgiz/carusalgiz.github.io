@@ -16,17 +16,19 @@ header{
     min-width: 50%;
     padding-top: 15px;
     background-color: #ffffff;
-    flex: 0 1 70%;
+    flex: 0 1 80%;
     position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
 }
 .top-left{
-    flex: 0 0 220px;
+    flex: 0 0 20%;
+    max-width: 200px;
+    min-width: 140px;
     background-color: #808285;
 }
 .top-right{
-    flex: 0 1 calc(100% - 220px);
+    flex: 0 1 80%;
     line-height: 80px;
     padding-right: 10px;
     background-color: #ffffff;
@@ -38,8 +40,9 @@ header{
     font-size: 18px;
 }
 .settings{
-    flex: 0 0 30%;
-    max-width: 220px;
+    flex: 0 0 20%;
+    max-width: 200px;
+    min-width: 140px;
     list-style: none;
     padding: 0;
     background-color: #ffffff;
