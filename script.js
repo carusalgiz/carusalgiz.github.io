@@ -10,7 +10,7 @@ function selected(el) {
     switch(el.id){
         case 'sources':
             document.getElementById('center-part').innerHTML='<a>Период активности(мин):  </a>' +
-                '<input type="text"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить источник" class="buttonStyle" onclick="newSource()">';
+                '<input type="text" class="inputField"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить источник" class="buttonStyle" onclick="newSource()">';
             break;
         case 'ip':
             //text
@@ -48,5 +48,5 @@ function newCity() {
         '<a>page_count:  </a><br>' +
         '<a>pause:  </a><br>' +
         '<a>source_list:  </a><br></div>' +
-        '<div id="inputFields"><input type="text"><br><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><input type="button" value="+" class="roundButton" onclick="newNameSource()"><br></div></div>';
+        '<div id="inputFields"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="+" class="roundButton" onclick="newNameSource()"><br></div></div>';
 }

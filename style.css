@@ -96,6 +96,9 @@ header{
     background-color: #67a2d6;
     color: white;
 }
+.inputField{
+    max-width: 150px;
+}
 .roundButton:active{
     background-color: #275780;
     border: #3e8ecf 1px solid;
