@@ -16,7 +16,7 @@ header{
     min-width: 50%;
     padding-top: 15px;
     background-color: #ffffff;
-    flex: 0 1 calc(100% - 220px);
+    flex: 0 1 70%;
     position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
@@ -38,7 +38,8 @@ header{
     font-size: 18px;
 }
 .settings{
-    flex: 0 0 220px;
+    flex: 0 0 30%;
+    max-width: 220px;
     list-style: none;
     padding: 0;
     background-color: #ffffff;

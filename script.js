@@ -10,7 +10,7 @@ function selected(el) {
     switch(el.id){
         case 'sources':
             document.getElementById('center-part').innerHTML='<a>Период активности(мин):  </a>' +
-                '<input type="text"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить" class="buttonStyle" onclick="newSource()" style="float: right">';
+                '<input type="text"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить источник" class="buttonStyle" onclick="newSource()">';
             break;
         case 'ip':
             //text
@@ -34,14 +34,14 @@ function selected(el) {
 }
 
 function newSource() {
-    document.getElementById('center-part').innerHTML = '<div style="display: flex"></div><a>Новый источник:</a><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город"><br></div>';
+    document.getElementById('center-part').innerHTML = '<div style="display: flex"><a>Новый источник:</a><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город"><br></div>';
     newCity();
 }
 function newNameSource() {
     document.getElementById('inputFields').innerHTML+='<input type="text" style="margin-left: 95px"><br>';
 }
 function newCity() {
-    document.getElementById('center-part').innerHTML+='<br><div style="display: flex;float: left"><div style="line-height: 1.4em; margin-left: 20px"><a>Название:  </a><br><br>' +
+    document.getElementById('center-part').innerHTML+='<br><div style="display: flex"><div style="line-height: 1.4em; margin-left: 20px"><a>Название:  </a><br><br>' +
         '<a>Город:  </a><br>' +
         '<a>site_url:  </a><br>' +
         '<a>host:  </a><br>' +
