@@ -23,12 +23,12 @@ header{
 }
 .top-left{
     flex: 0 0 20%;
-    max-width: 200px;
+    max-width: 220px;
     min-width: 180px;
     background-color: #808285;
 }
 .top-right{
-    flex: 0 0 80%;
+    flex: 0 1 80%;
     line-height: 80px;
     padding-right: 10px;
     background-color: #ffffff;
@@ -41,7 +41,7 @@ header{
 }
 .settings{
     flex: 0 0 20%;
-    max-width: 200px;
+    max-width: 220px;
     min-width: 180px;
     list-style: none;
     padding: 0;
