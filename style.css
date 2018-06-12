@@ -13,6 +13,7 @@ header{
     position: absolute;
 }
 #center-part{
+    min-width: 50%;
     padding-left: 15px;
     padding-top: 15px;
     background-color: #ffffff;
