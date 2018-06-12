@@ -49,6 +49,6 @@ function newCity() {
         '<a>page_count:  </a><br>' +
         '<a>pause:  </a><br>' +
         '<a>source_list:  </a><br></div>' +
-        '<div id="inputFields'+i+'"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="'+i+'" class="roundButton" id="but'+i+'" onclick="newNameSource(this)"><br></div></div>';
+        '<div id="inputFields'+i+'"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="+" class="roundButton" id="but'+i+'" onclick="newNameSource(this)"><br></div></div>';
         i++;
 }
