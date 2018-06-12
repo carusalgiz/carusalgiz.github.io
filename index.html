@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Maklersoft</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="top-left">
+    <img src="meow.jpg" width="218px" height="80px">
+    </div>
+    <div class="top-right">
+        <p class="log"><img src="user-512.png" width="40px" height="40px"></p>
+        <p class="log" style="margin: 0">User</p>
+    </div>
+</header>
+<div class="main">
+
+        <ul class="settings">
+            <li class="manage"><a>Управление</a></li>
+            <li class="sets" id="sources" onclick="selected(this)"><a>Источники</a></li>
+            <li class="sets" id="ip" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>IP-Адреса</a></li>
+            <li class="sets" id="parcer" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Парсер</a></li>
+
+            <li class="manage"><a>Статистика</a></li>
+            <li class="sets" id="activeTasks" onclick="selected(this)"><a>Активные задачи</a></li>
+            <li class="sets" id="activeSourses" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Активные источники</a></li>
+            <li class="sets" id="loadOnNetwork" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Нагрузка</a></li>
+            <li class="sets" id="stats" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Статистика</a></li>
+            <li class="sets" id="errors" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Ошибки</a></li>
+        </ul>
+    <div id="center-part" >
+
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
