@@ -33,12 +33,13 @@ function selected(el) {
     }
 }
 
+var i = 0;
 function newSource() {
     document.getElementById('center-part').innerHTML = '<div style="display: flex"><a>Новый источник:</a><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город"><br></div>';
     newCity();
 }
-function newNameSource() {
-    document.getElementById('inputFields').innerHTML+='<input type="text" style="margin-left: 95px"><br>';
+function newNameSource(el) {
+    document.getElementById(el.parentElement.id).innerHTML += '<input type="text" class="inputField"><br>';
 }
 function newCity() {
     document.getElementById('center-part').innerHTML+='<br><div style="display: flex"><div style="line-height: 1.4em; margin-left: 20px"><a>Название:  </a><br><br>' +
@@ -48,5 +49,6 @@ function newCity() {
         '<a>page_count:  </a><br>' +
         '<a>pause:  </a><br>' +
         '<a>source_list:  </a><br></div>' +
-        '<div id="inputFields"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="+" class="roundButton" onclick="newNameSource()"><br></div></div>';
+        '<div id="inputFields'+i+'"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="'+i+'" class="roundButton" id="but'+i+'" onclick="newNameSource(this)"><br></div></div>';
+        i++;
 }
