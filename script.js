@@ -41,12 +41,12 @@ function newNameSource() {
     document.getElementById('inputFields').innerHTML+='<input type="text" style="margin-left: 95px"><br>';
 }
 function newCity() {
-    document.getElementById('center-part').innerHTML+='<br><div><div style="float: left; line-height: 1.4em; margin-left: 20px"><a>Название:  </a><br><br>' +
+    document.getElementById('center-part').innerHTML+='<br><div style="display: flex"><div style="float: left; line-height: 1.4em; margin-left: 20px;flex: 0 0 40%"><a>Название:  </a><br><br>' +
         '<a>Город:  </a><br>' +
         '<a>site_url:  </a><br>' +
         '<a>host:  </a><br>' +
         '<a>page_count:  </a><br>' +
         '<a>pause:  </a><br>' +
         '<a>source_list:  </a><br></div>' +
-        '<div id="inputFields"><input type="text"><br><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><input type="button" value="+" class="roundButton" onclick="newNameSource()"><br></div></div>';
+        '<div id="inputFields" style="flex: 0 0 60%"><input type="text"><br><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><br><input type="text"><input type="button" value="+" class="roundButton" onclick="newNameSource()"><br></div></div>';
 }
