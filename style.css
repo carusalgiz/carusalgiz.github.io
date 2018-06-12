@@ -16,7 +16,7 @@ header{
     min-width: 50%;
     padding-top: 15px;
     background-color: #ffffff;
-    flex: 0 1 80%;
+    flex: 1 1 80%;
     position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
@@ -28,7 +28,7 @@ header{
     background-color: #808285;
 }
 .top-right{
-    flex: 0 1 80%;
+    flex: 1 1 80%;
     line-height: 80px;
     padding-right: 10px;
     background-color: #ffffff;
