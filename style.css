@@ -114,3 +114,7 @@ header{
     border: #3e8ecf 1px solid;
     color: white;
 }
+.table-line{
+    background-color: #e6e7e8;
+    color: black;
+}

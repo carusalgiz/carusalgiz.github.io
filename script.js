@@ -10,7 +10,8 @@ function selected(el) {
     switch(el.id){
         case 'sources':
             document.getElementById('center-top').innerHTML='<a>Период активности(мин):  </a>' +
-                '<input type="text"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить источник" class="buttonStyle" onclick="newSource()">';
+                '<input type="text"><input type="submit" value="Назначить" class="buttonStyle"><input type="button" value="Добавить источник" class="buttonStyle" onclick="newSource()"><br>';
+            document.getElementById('center-bottom').innerHTML='';
             break;
         case 'ip':
             //text
