@@ -20,6 +20,14 @@ header{
     position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.center-top{
+    flex: 0 0 95%;
+}
+.center-bottom{
+    flex: 0 0 5%;
 }
 .top-left{
     flex: 0 0 20%;
@@ -69,6 +77,7 @@ header{
 }
 .sets:hover{
     background-color: #e6e7e8;
+    transition: 0.5s;
 }
 .buttonStyle{
     height: 25px;
@@ -95,9 +104,10 @@ header{
 .roundButton:hover, .buttonStyle:hover{
     background-color: #67a2d6;
     color: white;
+    transition: 0.3s;
 }
 .inputField{
-    max-width: 150px;
+    width: 400px;
 }
 .roundButton:active{
     background-color: #275780;
