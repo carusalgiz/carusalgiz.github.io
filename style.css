@@ -145,6 +145,9 @@ table{
     border-spacing: 0;
     margin-top: 15px;
 }
+tr{
+    border-top: #d1d3d4 1px solid;
+}
 tr:nth-child(2n){
     background-color: #f6f7f8;
 }
@@ -167,5 +170,8 @@ th{
     }
     .activity{
         flex-direction: column;
+    }
+    td{
+        border-right: #d1d3d4 1px solid;
     }
 }
