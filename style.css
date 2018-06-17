@@ -9,12 +9,12 @@ header{
 .main{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 80px);
     position: absolute;
 }
 #center-part{
     min-width: 50%;
-    padding-top: 15px;
+    padding: 15px;
     background-color: #ffffff;
     flex: 1 1 80%;
     position: relative;
@@ -80,6 +80,8 @@ header{
     transition: 0.5s;
 }
 .buttonStyle{
+    outline: none;
+    padding: 0 10px 0 10px;
     height: 25px;
     background-color: #3e8ecf;
     color: white;
@@ -105,10 +107,16 @@ header{
     background-color: #67a2d6;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 .inputField{
+    padding: 5px 0 0 0;
+    height: 20px;
     width: 400px;
+    color: #275780;
+    margin-top: 2px;
 }
+
 .roundButton:active{
     background-color: #275780;
     border: #3e8ecf 1px solid;
@@ -117,4 +125,47 @@ header{
 .table-line{
     background-color: #e6e7e8;
     color: black;
+}
+.select-style{
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 4px;
+    border: #3e8ecf 1px solid;
+    color: #3e8ecf;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    margin-right: 30px;
+}
+.select-style:hover{
+    color: #275780;
+    transition: 0.5s;
+}
+table{
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 15px;
+}
+tr:nth-child(2n){
+    background-color: #f6f7f8;
+}
+th{
+    color: #858688;
+    font-weight: normal;
+    text-align: left;
+}
+@media all and (max-width: 800px) {
+    .buttonStyle{
+        margin: 5px 5px 5px 0;
+    }
+    .inputField{
+        padding: 0;
+        margin: 0;
+        width: 140px;
+    }
+    .select-style{
+        margin-right: 0;
+    }
+    .activity{
+        flex-direction: column;
+    }
 }
