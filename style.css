@@ -53,6 +53,7 @@ ul{
     margin: 0;
 }
 .settings{
+
     height: max-content;
     min-height: calc(100vh - 80px);
     flex: 0 0 20%;
@@ -176,6 +177,7 @@ th{
 @media all and (max-width: 800px) {
     .settings{
         display: none;
+        position: absolute;
     }
     .buttonStyle{
         margin: 5px 5px 5px 0;
