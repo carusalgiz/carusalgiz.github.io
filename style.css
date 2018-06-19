@@ -47,13 +47,17 @@ header{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .settings{
     height: max-content;
     min-height: calc(100vh - 80px);
     flex: 0 0 20%;
     max-width: 220px;
     min-width: 180px;
-    list-style: none;
     padding: 0;
     background-color: #ffffff;
     margin: 0;
@@ -138,9 +142,20 @@ header{
     font-size: 18px;
     margin-right: 30px;
 }
+.hamburger{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #3e8ecf;
+}
 .select-style:hover{
     color: #275780;
     transition: 0.5s;
+}
+.settings.open{
+    display: block;
 }
 table{
     width: 100%;
@@ -159,6 +174,9 @@ th{
     text-align: left;
 }
 @media all and (max-width: 800px) {
+    .settings{
+        display: none;
+    }
     .buttonStyle{
         margin: 5px 5px 5px 0;
     }
@@ -175,5 +193,10 @@ th{
     }
     td{
         border-right: #d1d3d4 1px solid;
+    }
+}
+@media all and (min-width: 800px){
+    span{
+        visibility: hidden;
     }
 }

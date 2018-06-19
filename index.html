@@ -10,7 +10,8 @@
 <body>
 <header>
     <div class="top-left">
-    <img src="meow.jpg" width="140px" height="80px">
+        <span class="hamburger" onclick="menuButtonClick()"></span>
+        <img src="meow.jpg" width="120px" height="80px" align="right">
     </div>
     <div class="top-right">
         <p class="log"><img src="user-512.png" width="40px" height="40px"></p>
@@ -18,8 +19,8 @@
     </div>
 </header>
 <div class="main">
-
-        <ul class="settings">
+    <div id="menu" class="settings">
+        <ul>
             <li class="manage"><a>Управление</a></li>
             <li class="sets" id="sources" onclick="selected(this)"><a>Источники</a></li>
             <li class="sets" id="ip" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>IP-Адреса</a></li>
@@ -32,6 +33,7 @@
             <li class="sets" id="stats" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Статистика</a></li>
             <li class="sets" id="errors" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Ошибки</a></li>
         </ul>
+    </div>
     <div id="center-part" >
         <div id="center-top">
 

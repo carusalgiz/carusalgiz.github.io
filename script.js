@@ -69,3 +69,10 @@ function newCity() {
         '<div id="inputFields'+i+'"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="+" class="roundButton" id="but'+i+'" onclick="newNameSource(this)"><br></div></div>';
         i++;
 }
+function menuButtonClick() {
+    if (document.getElementById('menu').className == "settings"){
+        document.getElementById('menu').className = "settings open";
+    } else {
+        document.getElementById('menu').className = "settings";
+    }
+}
