@@ -10,18 +10,18 @@ header{
     display: flex;
     width: 100%;
     height: calc(100% - 80px);
-    position: absolute;
 }
 #center-part{
     min-width: 50%;
     padding: 15px;
     background-color: #ffffff;
     flex: 1 1 80%;
-    position: relative;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    height: max-content;
 }
 .center-top{
     flex: 0 0 95%;
@@ -48,6 +48,8 @@ header{
     font-size: 18px;
 }
 .settings{
+    height: max-content;
+    min-height: calc(100vh - 80px);
     flex: 0 0 20%;
     max-width: 220px;
     min-width: 180px;

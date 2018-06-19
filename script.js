@@ -42,7 +42,9 @@ function selected(el) {
                 '<tr><td>3</td><td>Комната</td><td>Находка</td><td>[название улицы]</td><td>1</td><td>4</td><td>9</td><td>/nahodka/kvartiry/2-k_kvartira_50_m_40</td></tr></table>';
             break;
         case 'errors':
-            //text
+            document.getElementById('center-top').innerHTML = '<div style="display: flex"><div style="flex: 0 0 90%"><select class="select-style"><option>all</option><option>enqueue_task</option><option>load_item</option></select><select class="select-style"><option>all</option><option>avito</option><option>farpost</option><option>cian</option><option>irr</option><option>present_cite</option></select>' +
+                '<select class="select-style"><option>all</option><option>vld</option><option>nahodka</option><option>msk</option><option>kja</option><option>khv</option><option>kms</option><option>spb</option></select></div><div style="flex: 0 0 10%"><a>Объявлений: </a><a>9999</a></div></div>' +
+                '<div><table><tr><th colspan="6">Ошибки:</th></tr><tr><td>19.06.18 10:59</td><td style="width: 100px">enqueue_task</td><td style="width: 70px">avito</td><td style="width: 80px">nahodka</td><td>/nahodka/kommercheskaya_nedvizhimost/prodam</td><td>Can\'t call method "all_text" on an undefined value at /home/raven/production/rplus_import2/script/../lib/Rplus/Import/Queue/Avito.pm line 74.</td></tr><tr><td>19.06.18 10:59</td><td>enqueue_task</td><td>avito</td><td>nahodka</td><td>/nahodka/komnaty/prodam</td><td>Can\'t call method "all_text" on an undefined value at /home/raven/production/rplus_import2/script/../lib/Rplus/Import/Queue/Avito.pm line 74.</td></tr></table></div>'
             break;
     }
 }
