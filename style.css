@@ -158,6 +158,10 @@ ul{
 .settings.open{
     display: block;
 }
+.field{
+    width: 100px;
+    float: left;
+}
 table{
     width: 100%;
     border-spacing: 0;
@@ -185,7 +189,6 @@ th{
     .inputField{
         padding: 0;
         margin: 0;
-        width: 140px;
         width: 140px;
     }
     .select-style{

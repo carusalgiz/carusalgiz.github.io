@@ -49,25 +49,31 @@ function selected(el) {
     }
 }
 
-var i = 0;
+var i = 0, a = 0;
 function newSource() {
-    document.getElementById('center-top').innerHTML = '<div><p style="text-align: center">Новый источник:</p><br></div>';
+    document.getElementById('center-top').innerHTML = '<div><p style="text-align: center">Новый источник</p></div><div style="display: flex"><div class="field"><a>Название:  </a></div><input type="text" class="inputField"></div>';
     newCity();
     document.getElementById('center-bottom').innerHTML = '<input type="button" class="buttonStyle" value="Сохранить" style="float: right"><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город" style="float: right">';
 }
 function newNameSource(el) {
-    document.getElementById(el.parentElement.id).innerHTML += '<input type="text" class="inputField"><br>';
+    a++;
+    console.log(el.parentElement.id);
+    document.getElementById(el.parentElement.id).innerHTML += '<br><input type="text" id="src'+a+'" class="inputField" style="margin-left: 100px"><input type="button" value="+" id="but'+a+'" class="roundButton" onclick="newNameSource(this)">';
+    document.getElementById(el.id).remove();
 }
 function newCity() {
-    document.getElementById('center-top').innerHTML+='<div style="display: flex"><div style="line-height: 1.7em; margin-left: 20px"><a>Название:  </a><br><br>' +
-        '<a>Город:  </a><br>' +
-        '<a>site_url:  </a><br>' +
-        '<a>host:  </a><br>' +
-        '<a>page_count:  </a><br>' +
-        '<a>pause:  </a><br>' +
-        '<a>source_list:  </a><br></div>' +
-        '<div id="inputFields'+i+'"><input type="text" class="inputField"><br><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><br><input type="text" class="inputField"><input type="button" value="+" class="roundButton" id="but'+i+'" onclick="newNameSource(this)"><br></div></div>';
-        i++;
+    i++;
+    a++;
+    document.getElementById('center-top').innerHTML+='<hr><div style="display: flex; flex-direction: column">' +
+        '<div style="display: flex"><div class="field"><a class="field">Город:  </a></div><input type="text" class="inputField"></div>' +
+        '<div style="display: flex"><div class="field"><a class="field">site_url:  </a></div><input type="text" class="inputField"></div>' +
+        '<div style="display: flex"><div class="field"><a class="field">host:  </a></div><input type="text" class="inputField"></div>' +
+        '<div style="display: flex"><div class="field"><a class="field">page_count:  </a></div><input type="text" class="inputField"></div>' +
+        '<div style="display: flex"><div class="field"><a class="field">pause:  </a></div><input type="text" class="inputField"></div>' +
+        '<div style="display: flex; flex-direction: column"><div id="inner'+i+'">' +
+        '<div class="field"><a>source_list:  </a></div>' +
+        '<div id="inner1'+a+'"><input type="text" id="src'+a+'" class="inputField"><input type="button" id="but'+a+'" value="+" class="roundButton" onclick="newNameSource(this)"></div></div></div></div>';
+
 }
 function menuButtonClick() {
     if (document.getElementById('menu').className == "settings"){
