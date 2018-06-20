@@ -10,7 +10,11 @@
 <body>
 <header>
     <div class="top-left">
-        <span class="hamburger" onclick="menuButtonClick()"></span>
+        <div id="ham" class="hamburger" onclick="menuButtonClick()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <img src="meow.jpg" width="120px" height="80px" align="right">
     </div>
     <div class="top-right">
@@ -22,16 +26,16 @@
     <div id="menu" class="settings">
         <ul>
             <li class="manage"><a>Управление</a></li>
-            <li class="sets" id="sources" onclick="selected(this)"><a>Источники</a></li>
-            <li class="sets" id="ip" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>IP-Адреса</a></li>
-            <li class="sets" id="parser" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Парсер</a></li>
+            <li class="sets" id="sources" onclick="selected(this);menuButtonClick()"><a>Источники</a></li>
+            <li class="sets" id="ip" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>IP-Адреса</a></li>
+            <li class="sets" id="parser" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>Парсер</a></li>
 
             <li class="manage"><a>Статистика</a></li>
-            <li class="sets" id="activeTasks" onclick="selected(this)"><a>Активные задачи</a></li>
-            <li class="sets" id="activeSources" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Активные источники</a></li>
-            <li class="sets" id="loadOnNetwork" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Нагрузка</a></li>
-            <li class="sets" id="stats" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Статистика</a></li>
-            <li class="sets" id="errors" onclick="selected(this)" style="border-top: 1px #d1d3d4 solid"><a>Ошибки</a></li>
+            <li class="sets" id="activeTasks" onclick="selected(this);menuButtonClick()"><a>Активные задачи</a></li>
+            <li class="sets" id="activeSources" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>Активные источники</a></li>
+            <li class="sets" id="loadOnNetwork" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>Нагрузка</a></li>
+            <li class="sets" id="stats" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>Статистика</a></li>
+            <li class="sets" id="errors" onclick="selected(this);menuButtonClick()" style="border-top: 1px #d1d3d4 solid"><a>Ошибки</a></li>
         </ul>
     </div>
     <div id="center-part" >

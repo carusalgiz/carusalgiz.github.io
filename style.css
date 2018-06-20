@@ -6,6 +6,14 @@ header{
     height: 80px;
     display: flex;
 }
+.bar1, .bar2, .bar3{
+    width: 45px;
+    height: 6px;
+    background-color: #e6e7e8;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
 .main{
     display: flex;
     width: 100%;
@@ -53,7 +61,6 @@ ul{
     margin: 0;
 }
 .settings{
-
     height: max-content;
     min-height: calc(100vh - 80px);
     flex: 0 0 20%;
@@ -147,9 +154,8 @@ ul{
     position: absolute;
     top: 30px;
     left: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #3e8ecf;
+    width: 45px;
+    height: 40px;
 }
 .select-style:hover{
     color: #275780;
@@ -202,7 +208,18 @@ th{
     }
 }
 @media all and (min-width: 800px){
-    span{
+    div .hamburger{
         visibility: hidden;
     }
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-8px, 7px);
+    background-color: white;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: white;
 }
