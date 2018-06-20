@@ -53,7 +53,7 @@ var i = 0, a = 0;
 function newSource() {
     document.getElementById('center-top').innerHTML = '<div><p style="text-align: center">Новый источник</p></div><div style="display: flex"><div class="field"><a>Название:  </a></div><input type="text" class="inputField"></div>';
     newCity();
-    document.getElementById('center-bottom').innerHTML = '<input type="button" class="buttonStyle" value="Сохранить" style="float: right"><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город" style="float: right">';
+    document.getElementById('center-bottom').innerHTML = '<div style="margin-left: 300px"><input type="button" class="buttonStyle" value="Сохранить"><input type="button" class="buttonStyle" onclick="newCity()" value="Добавить город"></div>';
 }
 function newNameSource(el) {
     a++;
